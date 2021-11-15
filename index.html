@@ -2,7 +2,6 @@
  <html lang="en">
  <head>
  <link rel="stylesheet" href="style.css">
- <script type="text/javascript" src="menuitem.js"></script>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initialscale=1.0">
  <title>Travel landing page</title>
@@ -12,10 +11,10 @@
  
  <!-- Video Source -->
   <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
-  <section class="showcase">
+  <section class="showcase active">
     <header>
       <h2 class="logo">Travel</h2>
-      <div class="toggle"></div>
+      <div class="toggle active"></div>
     </header>
       <!--<video src="https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/" muted loop autoplay></video>-->
       
@@ -49,5 +48,14 @@
       <li><a href="#">Contact</a></li>
     </ul>
   </div>
+  <script type="text/javascript" src="menuitem.js">
+  const menuToggle = document.querySelector('.toggle')
+  const showcase = document.querySelector('.showcase')
+  
+  menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active')
+    showcase.classList.toggle('active')
+  })
+  </script>
 </body>
 </html>
