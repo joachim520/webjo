@@ -4,58 +4,11 @@
  <link rel="stylesheet" href="style.css">
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initialscale=1.0">
- <title>Travel landing page</title>
+ <title>Weather forecast VVVVDRONES</title>
  </head>
  <body>
- 
- 
- <!-- Video Source -->
-  <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
-  <section class="showcase active">
-    <header>
-      <h2 class="logo">Travel</h2>
-      <div class="toggle active"></div>
-    </header>
-      <!--<video src="https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/" muted loop autoplay></video>-->
-      
-      <video autoplay="autoplay" loop muted>
-    <source src="testvidcompressedv2.mp4" type="video/mp4"  />
-</video>
-
-      
-      <div class="overlay"></div>
-      <div class="text">
-      <h2>Never Stop</h2> 
-      <h3>Exploring The World</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.</p>
-      <a href="weather.html">Explore</a>
-    </div>
-    <ul class="social">
-      <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
-      <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
-      <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
-    </ul>
-  </section>
-  <div class="menu">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">News</a></li>
-      <li><a href="#">Destination</a></li>
-      <li><a href="#">Blog</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </div>
-  <script type="text/javascript" src="menuitem.js">
-  const menuToggle = document.querySelector('.toggle')
-  const showcase = document.querySelector('.showcase')
-  
-  menuToggle.addEventListener('click', () => {
-    menuToggle.classList.toggle('active')
-    showcase.classList.toggle('active')
-  })
-  </script>
+ <iframe class="showcase" width="650" height="450"
+        src="https://embed.windy.com/embed2.html?lat=46.920&lon=8.965&detailLat=40.416&detailLon=-3.693&width=650&height=450&zoom=4&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=kt&metricTemp=%C2%B0C&radarRange=-1"
+        frameborder="0"></iframe>
 </body>
 </html>
